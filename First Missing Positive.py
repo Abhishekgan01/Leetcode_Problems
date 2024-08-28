@@ -6,3 +6,4 @@ class Solution:
             if i not in num_set:
                 return i
         return len(nums) + 1
+
