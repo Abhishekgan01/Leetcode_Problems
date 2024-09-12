@@ -9,3 +9,13 @@ class Solution:
             sums += nums[i]
             result.append(sums)
         return result
+    
+#2nd approach
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+       x = 0
+       m=[]
+       for i in nums:
+        x = x + i
+        m.append(x)
+       return m
