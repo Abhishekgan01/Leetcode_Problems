@@ -17,3 +17,7 @@ class Solution:
             return -1
 
         for k in range(len(s)):
+            if s[k] == key:
+                return k
+
+        return -1
