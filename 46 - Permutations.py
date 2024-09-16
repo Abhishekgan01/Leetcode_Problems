@@ -1,16 +1,19 @@
-from typing import List
+from typing import  List
 
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
-        def backtrack(start, end):
-            if start == end:
-                result.append(nums[:])  
-            else:
-                for i in range(start, end):
-                    nums[start], nums[i] = nums[i], nums[start]
-                    backtrack(start + 1, end)
-                    nums[start], nums[i] = nums[i], nums[start]
+        n = len(nums)
+        ans, sol = [], []
 
-        result = []
-        backtrack(0, len(nums)) 
-        return result
+        def backtrack():
+            if len(sol) == n:
+                ans.append(sol[:])
+                return 
+
+            for x in nums:
+                if x not in sol:
+                    sol.append(x)
+                    backtrack()
+                    sol.pop()
+        backtrack()
+        return ans
