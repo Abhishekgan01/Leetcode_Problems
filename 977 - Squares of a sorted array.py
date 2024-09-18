@@ -4,7 +4,7 @@ class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
         ans =[]
         l,r = 0, len(nums)-1
-        while l<r:
+        while l<=r:
             left, right = abs(nums[l]), abs(nums[r])
             if left > right:
                 #2.[16,100]
