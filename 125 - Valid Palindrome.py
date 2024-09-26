@@ -3,3 +3,4 @@ class Solution:
         s = "".join(val for val in s if val.isalnum()).lower()
         return s == s[::-1]
     
+
