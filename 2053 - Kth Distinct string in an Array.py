@@ -14,6 +14,7 @@ class Solution(object):
             return ""
         else:
             return temp[k-1]
+        
 obj=Solution()
 arr=["a","a","b","b","c"]
 k=2
