@@ -16,7 +16,7 @@ class Solution(object):
             return temp[k-1]
         
 obj=Solution()
-arr=["a","a","b","b","c"]
+arr=["a","a","b","b","c"]   
 k=2
 print((obj.kthDistinct(arr,1)))    
             
