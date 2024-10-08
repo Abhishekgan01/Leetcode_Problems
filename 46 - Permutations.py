@@ -1,19 +1,9 @@
-from typing import  List
-
+from typing import List
+import itertools
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
-        n = len(nums)
-        ans, sol = [], []
-
-        def backtrack():
-            if len(sol) == n:
-                ans.append(sol[:])
-                return 
-
-            for x in nums:
-                if x not in sol:
-                    sol.append(x)
-                    backtrack()
-                    sol.pop()
-        backtrack()
-        return ans
+        ele = itertools.permutations(nums)
+        list_ele = []
+        for i in ele:
+            list_ele.append(i)
+        return list_ele
