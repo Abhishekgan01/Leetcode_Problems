@@ -7,8 +7,10 @@ class Solution:
             else:
                 freq[i] += 1
 
-        first_freq = list(freq.values())[0]
-        
+        first_freq = list(freq.values())[0] 
+        #or
+        first_freq = next(iter(freq.values()))
+
         for count in freq.values():
             if count != first_freq:
                 return False
