@@ -11,4 +11,4 @@ class Solution:
         final = []
         for i,j in sd.items():
             final.append(j)
-        return finalgit 
+        return final
