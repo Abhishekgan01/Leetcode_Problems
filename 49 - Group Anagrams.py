@@ -13,14 +13,4 @@ class Solution:
 
         return list(anagram_map.values())  
   
-# strs = ["eat","tea","tan","ate","nat","bat"]
-# for i in strs:
-#     print(i)
 
-# for s in strs:
-#     sorted_str = ''.join(s)
-#     print(sorted_str)
-
-# str1 = "eat tea tan ate nat"
-# x = str1.split()
-# print(x)  
