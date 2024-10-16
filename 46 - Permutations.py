@@ -7,3 +7,10 @@ class Solution:
         for i in ele:
             list_ele.append(i)
         return list_ele
+
+# a = [1,2,3]
+# b = list(itertools.permutations(a))
+# lists = []
+# for i in b:
+#     lists.append(list(i))
+# print(lists)
