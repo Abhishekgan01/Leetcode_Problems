@@ -1,10 +1,10 @@
 from typing import List
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        values = {}
+        freq = {}
         for num in nums:  
-            if num in values: 
-                values[num] += 1
+            if num in freq: 
+                freq[num] += 1
             else:
-                values[num] = 1
-        return max(values, key=values.get)  
+                freq[num] = 1
+        return max(freq, key=freq.get)  
