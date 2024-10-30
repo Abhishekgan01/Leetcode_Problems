@@ -9,3 +9,4 @@ class Solution:
                     length-=1
                     break
         return length
+
