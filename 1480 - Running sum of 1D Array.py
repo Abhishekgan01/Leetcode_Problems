@@ -10,7 +10,7 @@ class Solution:
             result.append(sums)
         return result
     
-#2nd approach
+#2nd approach(alternative)
 class Solution:
     def runningSum(self, nums: List[int]) -> List[int]:
        x = 0
