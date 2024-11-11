@@ -1,3 +1,5 @@
+from collections import Counter
+
 class Solution:
     def commonChars(self, words: List[str]) -> List[str]:
         common_count = Counter(words[0])
