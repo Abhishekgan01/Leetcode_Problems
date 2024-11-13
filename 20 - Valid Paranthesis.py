@@ -14,7 +14,7 @@ class Solution:
             elif i in hashmap.keys():
                 if stack == []:
                     return False
-                # "(" 
+                # "("                 ")"
                 if stack.pop() != hashmap[i]:
                     return False
         return stack == []
