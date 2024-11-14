@@ -9,4 +9,4 @@ for i in num2:
     value.append(ord(i))
 for i in value:
     sum += i
-print(type(sum))
+print(sum)
