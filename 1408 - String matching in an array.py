@@ -4,7 +4,7 @@ class Solution:
         result = []
         for word in words:
             for i in words:
-                if word in i and word != i: #Not equal 
+                if word in i and word != i: 
                     result.append(word)
                     break
 
