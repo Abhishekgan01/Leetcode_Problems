@@ -14,7 +14,7 @@ class Solution:
         if len(common) == 0:
             return [0, 0]
 
-        #Count how many elements in nums1 exist in nums2 (answer1)
+        #Count the no elements in nums1 exist in nums2 (answer1)
         answer1 = len(common)
 
         # Count how many elements in nums2 exist in nums1 (answer2)
