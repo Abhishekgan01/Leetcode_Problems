@@ -8,7 +8,7 @@ class Solution:
                 freq[i] += 1
 
         first_freq = list(freq.values())[0] 
-        #or
+                        #(or)
         first_freq = next(iter(freq.values()))
 
         for count in freq.values():
