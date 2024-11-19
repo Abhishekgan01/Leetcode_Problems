@@ -1,12 +1,8 @@
-import math
-num1 = "123"
-num2 = "34"
-value = []
-sum = 0
-for i in num1:
-    value.append(ord(i))
-for i in num2:
-    value.append(ord(i))
-for i in value:
-    sum += i
-print(sum)
+class Solution(object):
+    def addStrings(self, num1, num2):
+        """
+        :type num1: str
+        :type num2: str
+        :rtype: str
+        """
+        return (str)((int)(num1) + (int)(num2))
