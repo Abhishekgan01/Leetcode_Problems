@@ -3,7 +3,6 @@ from typing import List
 class Solution:
     def findIntersectionValues(self, nums1: List[int], nums2: List[int]) -> List[int]:
         common = []
-        output = []
 
         #common elements from nums1 that exist in nums2
         for i in nums1:
