@@ -2,15 +2,13 @@ from typing import List
 
 class Solution:
     def maximumValue(self, strs: List[str]) -> int:
-        max = 0 
-        for i in strs:
-            # check if we can convert string into integer
-            try:
-                if int(i)>max:
-                    max = int(i)
-            # other wise take the length of string
-            except:
-                if len(i) > max:
-                    max = len(i)         
-        return max
+        max_value = 0  
+        for s in strs:
+            if s.isdigit():
+                value = int(s)
+            else:
+                value = len(s)
+            if value > max_value:
+                max_value = value
                 
+        return max_value 
