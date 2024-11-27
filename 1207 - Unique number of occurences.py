@@ -9,7 +9,7 @@ class Solution:
             else:
                 dict[i] = 1
 
-        setx = set(dict.values()) #to remove the same occurences 
+        setx = set(dict.values()) 
         if len(dict) == len(setx):
             return True
         else:
